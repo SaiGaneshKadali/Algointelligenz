@@ -18,7 +18,7 @@ export default function TestimonialCard({ testimonial }) {
         {/* Star Rating */}
         <div className="flex items-center space-x-1 mb-5">
           {[...Array(testimonial.rating || 5)].map((_, i) => (
-            <Star key={i} className="h-4.5 w-4.5 fill-amber-400 stroke-amber-400" />
+            <Star key={i} className="h-4 w-4 fill-amber-400 stroke-amber-400" />
           ))}
         </div>
 

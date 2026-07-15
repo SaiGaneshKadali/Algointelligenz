@@ -84,7 +84,7 @@ export default function Courses() {
             <div className="lg:col-span-5 relative">
               <label htmlFor="search" className="sr-only">Search Courses</label>
               <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                <Search className="h-4.5 w-4.5" />
+                <Search className="h-5 w-5" />
               </div>
               <input
                 id="search"

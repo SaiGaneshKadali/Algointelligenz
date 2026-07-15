@@ -84,7 +84,7 @@ export default function About() {
             title="Pioneering the Future of Technical Education"
             subtitle="We are a premium IT training institute dedicated to raising the standard of software engineering globally."
             align="center"
-            className="text-white"
+            dark={true}
           />
         </div>
       </section>

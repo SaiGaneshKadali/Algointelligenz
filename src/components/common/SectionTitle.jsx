@@ -5,7 +5,8 @@ export default function SectionTitle({
   title,
   subtitle,
   align = 'center',
-  className = ''
+  className = '',
+  dark = false
 }) {
   const isCenter = align === 'center';
 
@@ -27,7 +28,9 @@ export default function SectionTitle({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="text-3xl sm:text-4xl font-extrabold text-brand-primary tracking-tight leading-tight"
+        className={`text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight ${
+          dark ? 'text-white' : 'text-brand-primary'
+        }`}
       >
         {title}
       </motion.h2>
@@ -38,7 +41,9 @@ export default function SectionTitle({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-4 text-base sm:text-lg text-slate-500 leading-relaxed font-normal"
+          className={`mt-4 text-base sm:text-lg leading-relaxed font-normal ${
+            dark ? 'text-slate-300' : 'text-slate-500'
+          }`}
         >
           {subtitle}
         </motion.p>

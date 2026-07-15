@@ -72,7 +72,7 @@ export default function Placements() {
             title="Accelerating High-Growth Careers"
             subtitle="Explore our verified career statistics, alumni placements, salary indicators, and dedicated hiring frameworks."
             align="center"
-            className="text-white"
+            dark={true}
           />
         </div>
       </section>

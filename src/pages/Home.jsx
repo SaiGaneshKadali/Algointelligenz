@@ -221,7 +221,7 @@ export default function Home() {
                 className="bg-brand-secondary hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-lg text-sm transition-all shadow-secondary-shadow hover:shadow-premium flex items-center justify-center gap-2 group"
               >
                 Book Free Consultation
-                <ArrowRight className="h-4.5 w-4.5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </Link>
             

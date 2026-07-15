@@ -76,7 +76,7 @@ export default function CourseCard({ course, showPrice = true }) {
         {course.mentor && (
           <div className="flex items-center space-x-3 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
             <div className="bg-slate-200 text-slate-600 p-1 rounded-full shrink-0">
-              <User className="h-4.5 w-4.5" />
+              <User className="h-4 w-4" />
             </div>
             <div className="text-[11px] truncate">
               <p className="font-semibold text-brand-primary">{course.mentor.name}</p>

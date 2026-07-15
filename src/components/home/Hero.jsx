@@ -46,7 +46,7 @@ export default function Hero() {
               variants={itemVariants}
               className="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-800 rounded-full px-4 py-1.5 shadow-lg backdrop-blur-sm"
             >
-              <Sparkles className="h-4.5 w-4.5 text-brand-accent animate-pulse" />
+              <Sparkles className="h-5 w-5 text-brand-accent animate-pulse" />
               <span className="text-[11px] font-bold tracking-widest text-slate-300 uppercase">
                 #1 Rated Tech Training Academy
               </span>
@@ -78,19 +78,19 @@ export default function Hero() {
               className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300 pt-2"
             >
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4.5 w-4.5 text-brand-accent shrink-0" />
+                <CheckCircle2 className="h-5 w-5 text-brand-accent shrink-0" />
                 <span>Live Interactive Batches</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4.5 w-4.5 text-brand-accent shrink-0" />
+                <CheckCircle2 className="h-5 w-5 text-brand-accent shrink-0" />
                 <span>Mentors from Google, AWS, Vercel</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4.5 w-4.5 text-brand-accent shrink-0" />
+                <CheckCircle2 className="h-5 w-5 text-brand-accent shrink-0" />
                 <span>5+ Enterprise Projects</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4.5 w-4.5 text-brand-accent shrink-0" />
+                <CheckCircle2 className="h-5 w-5 text-brand-accent shrink-0" />
                 <span>100% Placement Guarantee Support</span>
               </div>
             </motion.div>
@@ -103,7 +103,7 @@ export default function Hero() {
               <Link to="/courses" className="shrink-0">
                 <button className="w-full bg-brand-secondary hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-lg text-sm transition-all shadow-secondary-shadow hover:shadow-premium flex items-center justify-center gap-2 group">
                   Explore Courses
-                  <ArrowRight className="h-4.5 w-4.5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
               
