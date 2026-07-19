@@ -73,7 +73,7 @@ export default function CourseCard({ course, showPrice = true }) {
         </div>
 
         {/* Mentor Info */}
-        {course.mentor && (
+        {/* {course.mentor && (
           <div className="flex items-center space-x-3 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
             <div className="bg-slate-200 text-slate-600 p-1 rounded-full shrink-0">
               <User className="h-4 w-4" />
@@ -83,7 +83,7 @@ export default function CourseCard({ course, showPrice = true }) {
               <p className="text-slate-400 text-[10px]">{course.mentor.role} @ {course.mentor.company}</p>
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Interactive Syllabus Toggle */}
         <button
@@ -125,7 +125,7 @@ export default function CourseCard({ course, showPrice = true }) {
             </div>
           )}
           
-          <button
+          {/* <button
             onClick={() => addToast(`Enrolling program: ${course.title}. Our advisors will call you shortly to block your seat.`, 'success')}
             className={`flex items-center gap-1.5 font-semibold text-xs py-2 px-4 rounded-lg transition-all duration-300 ${
               showPrice 
@@ -135,7 +135,7 @@ export default function CourseCard({ course, showPrice = true }) {
           >
             Enroll Now
             <ArrowRight className="h-3.5 w-3.5" />
-          </button>
+          </button> */}
         </div>
       </div>
     </motion.div>

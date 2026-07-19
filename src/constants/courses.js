@@ -155,7 +155,7 @@ export const COURSES = [
       "Real-time Video Processing & Edge Deployment"
     ]
   },
-  {
+  /* {
     id: "react-js",
     title: "React JS Development",
     category: "Development Courses",
@@ -180,7 +180,7 @@ export const COURSES = [
       "Routing with React Router DOM v6",
       "State Management using Zustand and Redux Toolkit"
     ]
-  },
+  }, */
   {
     id: "next-js",
     title: "Next.js Production Framework",
@@ -207,7 +207,7 @@ export const COURSES = [
       "Next.js Optimization (Image, Font, Script) & Vercel Deployment"
     ]
   },
-  {
+  /* {
     id: "mern-stack",
     title: "MERN Full Stack Development",
     category: "Development Courses",
@@ -232,7 +232,7 @@ export const COURSES = [
       "Integrating React Frontend with Node Backend",
       "Payment Gateway Integration (Stripe) and Cloud Deployment"
     ]
-  },
+  }, */
   {
     id: "python-fullstack",
     title: "Python Full Stack Development",
@@ -311,7 +311,7 @@ export const COURSES = [
       "File Handling, Exception Catching, and API Consumption"
     ]
   },
-  {
+  /* {
     id: "data-science",
     title: "Data Science & Analytics",
     category: "AI Courses",
@@ -336,7 +336,7 @@ export const COURSES = [
       "Statistical Hypothesis Testing & A/B Testing",
       "Building Dashboards with Tableau & PowerBI"
     ]
-  },
+  }, */
   {
     id: "aws-cloud",
     title: "AWS Cloud Architect",
