@@ -16,7 +16,10 @@ export default function Courses() {
   const [selectedLevel, setSelectedLevel] = useState('All');
   const [selectedDuration, setSelectedDuration] = useState('All');
 
-  const categories = ['All', 'AI Courses', 'Development Courses', 'Cloud & DevOps'];
+  // Dynamically extract categories from COURSES database
+  const categories = useMemo(() => {
+    return ['All', ...Array.from(new Set(COURSES.map(course => course.category)))];
+  }, []);
   const levels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
   const durations = [
     { label: 'All Durations', value: 'All' },

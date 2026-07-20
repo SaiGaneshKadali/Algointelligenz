@@ -108,7 +108,7 @@ export default function Hero() {
               </Link>
               
               <button
-                onClick={() => addToast("Please fill the contact form at the bottom of the page or dial +1 (555) 234-5678 to book your free career counseling demo session.", "info")}
+                onClick={() => addToast("Please reach out directly at +91 7899 917 141 or Tazeem@algointelligenz.com to book your free career counseling demo session.", "info")}
                 className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold px-8 py-3.5 rounded-lg text-sm transition-all flex items-center justify-center gap-2 group shadow-lg"
               >
                 <Play className="h-4 w-4 text-brand-accent fill-brand-accent group-hover:scale-110 transition-transform" />

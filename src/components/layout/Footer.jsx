@@ -75,7 +75,7 @@ export default function Footer() {
                   All Courses
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/placements" className="hover:text-white transition-colors flex items-center gap-1 group">
                   <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   Placements & Success
@@ -86,7 +86,7 @@ export default function Footer() {
                   <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   About Us
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact" className="hover:text-white transition-colors flex items-center gap-1 group">
                   <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -103,15 +103,15 @@ export default function Footer() {
             </h3>
             <div className="flex items-start space-x-3">
               <MapPin className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
-              <span>100 Technology Parkway, Suite 500, Silicon Valley, CA 94025</span>
+              <span>41 1st main, BTM 1st stage, Bangalore - 560029</span>
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="h-4 w-4 text-brand-accent shrink-0" />
-              <span>+1 (555) 234-5678</span>
+              <span>+91 7899 917 141</span>
             </div>
             <div className="flex items-center space-x-3">
               <Mail className="h-4 w-4 text-brand-accent shrink-0" />
-              <span>info@aitechacademy.edu</span>
+              <span>Tazeem@algointelligenz.com</span>
             </div>
             <div className="pt-2 text-xs text-slate-500">
               <p className="font-semibold text-slate-400">Business Hours:</p>
@@ -120,15 +120,23 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 4: Newsletter */}
+          {/* Column 4: Admissions Desk (Form Commented Out for Future Use) */}
           <div>
             <h3 className="text-white text-sm font-semibold tracking-wider uppercase mb-6">
-              Subscribe to Newsletter
+              Admissions Desk
             </h3>
             <p className="text-sm text-slate-400 mb-4 leading-relaxed">
-              Stay updated with course releases, early-bird discounts, and placement drives.
+              Have any questions? Speak directly to our advisors to clear your doubts and enroll.
             </p>
-            <form onSubmit={handleSubscribe} className="space-y-2">
+            <div className="space-y-2">
+              <a href="tel:+917899917141" className="w-full flex items-center justify-center bg-brand-secondary hover:bg-brand-secondary/90 text-white rounded-lg py-2.5 text-sm font-semibold transition-colors duration-300 shadow-secondary-shadow">
+                Call Advisors
+              </a>
+              <a href="mailto:Tazeem@algointelligenz.com" className="w-full flex items-center justify-center bg-slate-900 border border-slate-700 hover:border-slate-600 text-slate-300 rounded-lg py-2.5 text-sm font-semibold transition-colors duration-300">
+                Email Admissions
+              </a>
+            </div>
+            {/* <form onSubmit={handleSubscribe} className="space-y-2">
               <div className="relative">
                 <input
                   type="email"
@@ -143,7 +151,7 @@ export default function Footer() {
               >
                 Subscribe
               </button>
-            </form>
+            </form> */}
           </div>
 
         </div>

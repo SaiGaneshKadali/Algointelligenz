@@ -6,9 +6,10 @@ import Loader from '../components/common/Loader';
 // Lazy loading pages for optimized bundle size & code splitting
 const Home = lazy(() => import('../pages/Home'));
 const Courses = lazy(() => import('../pages/Courses'));
-const Placements = lazy(() => import('../pages/Placements'));
-const About = lazy(() => import('../pages/About'));
+// const Placements = lazy(() => import('../pages/Placements'));
+// const About = lazy(() => import('../pages/About'));
 const Contact = lazy(() => import('../pages/Contact'));
+const CourseDetail = lazy(() => import('../pages/CourseDetail'));
 
 export default function AppRoutes() {
   return (
@@ -18,8 +19,9 @@ export default function AppRoutes() {
           {/* Main Pages */}
           <Route index element={<Home />} />
           <Route path="courses" element={<Courses />} />
-          <Route path="placements" element={<Placements />} />
-          <Route path="about" element={<About />} />
+          {/* <Route path="placements" element={<Placements />} />
+          <Route path="about" element={<About />} /> */}
+          <Route path="courses/:id" element={<CourseDetail />} />
           <Route path="contact" element={<Contact />} />
           
           {/* Fallback for undefined routes */}

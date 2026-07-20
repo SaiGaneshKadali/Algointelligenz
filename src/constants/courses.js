@@ -1,42 +1,16 @@
 export const COURSES = [
   {
-    id: "gen-ai",
-    title: "Generative AI",
+    id: "llm-prompt-engineering",
+    title: "LLM and Prompt Engineering",
     category: "AI Courses",
-    description: "Master Large Language Models (LLMs), LangChain, Vector Databases, and building production-grade AI agents.",
-    duration: "10 Weeks",
-    level: "Advanced",
-    price: "₹49,999",
-    rating: 4.9,
-    reviews: 320,
-    featured: true,
-    timings: "Sat & Sun, 10:00 AM - 1:00 PM EST",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Dr. Aris Thorne",
-      role: "Former Lead AI Scientist",
-      company: "Google DeepMind"
-    },
-    syllabus: [
-      "Introduction to Transformers & Attention Mechanism",
-      "Fine-tuning LLMs with PEFT & LoRA",
-      "Retrieval Augmented Generation (RAG) Architecture",
-      "Building Multi-Agent Systems with LangGraph & CrewAI",
-      "Deploying AI Models at Scale with Triton & vLLM"
-    ]
-  },
-  {
-    id: "prompt-eng",
-    title: "ChatGPT & Prompt Engineering",
-    category: "AI Courses",
-    description: "Learn advanced prompting techniques, system prompts, prompt chaining, and API integration for automated workflows.",
-    duration: "4 Weeks",
+    description: "A practitioner-focused course on getting real work done with large language models — through prompting skill, Microsoft's LLM-in-Excel integration, no-code automation via Power Automate, and building agentic AI solutions with Copilot Studio.",
+    duration: "8 Weeks",
     level: "Beginner",
-    price: "₹9,999",
+    price: "₹19,999",
     rating: 4.8,
-    reviews: 540,
+    reviews: 240,
     featured: true,
-    timings: "Mon & Wed, 7:00 PM - 9:00 PM EST",
+    timings: "Sat & Sun, 10:00 AM - 12:30 PM IST",
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
     mentor: {
       name: "Sarah Jenkins",
@@ -44,25 +18,71 @@ export const COURSES = [
       company: "OpenAI Client Partner"
     },
     syllabus: [
-      "Foundations of Prompting & Tokenization",
-      "Few-Shot, Chain-of-Thought, and ReAct Frameworks",
-      "Managing Context Windows and System Messages",
-      "Automating Workflows with OpenAI & Anthropic APIs",
-      "Mitigating Hallucinations and Security Risks (Prompt Injection)"
+      {
+        title: "1(a) Prompt Engineering",
+        topics: [
+          "What LLMs are and how they interpret and respond to prompts",
+          "Core prompting techniques: zero-shot, few-shot, chain-of-thought, role prompting",
+          "Structuring prompts with clear instructions, context, constraints, and output format",
+          "Using delimiters, system/user/assistant roles, and XML/JSON-style formatting for reliable outputs",
+          "Techniques for reducing hallucination and improving factual accuracy",
+          "Iterative prompt refinement and A/B testing prompts",
+          "Designing prompts for summarization, extraction, classification, and content generation",
+          "Common pitfalls (ambiguity, prompt injection, context overload) and how to avoid them",
+          "Hands-on exercises building a personal prompt library for reusable tasks"
+        ]
+      },
+      {
+        title: "1(b) LLM in Excel",
+        topics: [
+          "Overview of AI-powered functions available inside Excel (e.g., Copilot for Excel / LLM-driven formulas)",
+          "Using natural language to generate formulas, clean data, and summarize tables",
+          "Building AI-assisted data classification and text-analysis columns",
+          "Automating repetitive spreadsheet tasks (categorization, sentiment tagging, data extraction) using LLM functions",
+          "Combining traditional Excel formulas with AI-generated outputs",
+          "Best practices for accuracy checking and auditing AI-generated spreadsheet content",
+          "Practical use cases: report summarization, survey analysis, and data enrichment"
+        ]
+      },
+      {
+        title: "1(c) Power Automate",
+        topics: [
+          "Introduction to Power Automate and low-code workflow automation",
+          "Building flows that trigger on events (email, forms, files, schedules)",
+          "Connecting Power Automate with AI Builder and LLM/Copilot connectors",
+          "Automating document processing, approvals, and notifications",
+          "Integrating Power Automate with Excel, SharePoint, Teams, and Outlook",
+          "Error handling, conditions, loops, and variables within flows",
+          "Building an end-to-end automated business process (e.g., AI-assisted email triage or approval workflow)"
+        ]
+      },
+      {
+        title: "1(d) Copilot Studio — Agentic AI Development",
+        topics: [
+          "Fundamentals of agentic AI and how Copilot Studio fits into the Microsoft AI ecosystem",
+          "Designing conversational topics, triggers, and dialog flows",
+          "Connecting Copilot agents to knowledge sources (SharePoint, websites, files)",
+          "Building custom actions/plugins that call APIs and Power Automate flows",
+          "Adding memory, variables, and multi-turn context handling to an agent",
+          "Deploying agents across Teams, web chat, and other channels",
+          "Testing, monitoring, and iterating on agent performance",
+          "Capstone: build and deploy a working agentic assistant for a real business task"
+        ]
+      }
     ]
   },
   {
-    id: "machine-learning",
-    title: "Machine Learning Engineering",
+    id: "python-llm-foundations",
+    title: "Python for LLM Development — Foundations",
     category: "AI Courses",
-    description: "Deep dive into regression, classification, clustering, hyperparameter tuning, and ML pipelines using Scikit-Learn.",
+    description: "A grounding in the technical building blocks behind modern AI systems — machine learning, deep learning, NLP, computer vision, and LLMs — using Python.",
     duration: "12 Weeks",
     level: "Intermediate",
-    price: "₹39,999",
-    rating: 4.7,
-    reviews: 420,
+    price: "₹29,999",
+    rating: 4.9,
+    reviews: 310,
     featured: true,
-    timings: "Tue & Thu, 6:00 PM - 8:30 PM EST",
+    timings: "Sat & Sun, 2:00 PM - 4:30 PM IST",
     image: "https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=600&q=80",
     mentor: {
       name: "Marcus Aurelius",
@@ -70,375 +90,208 @@ export const COURSES = [
       company: "Meta"
     },
     syllabus: [
-      "Linear & Logistic Regression, Decision Trees",
-      "Ensemble Methods: Random Forests & XGBoost",
-      "Feature Engineering & Dimensionality Reduction (PCA)",
-      "Model Evaluation, Cross-Validation, and Tuning",
-      "Deploying Models with FastAPI and Docker"
+      {
+        title: "2(a) ML Basics",
+        topics: [
+          "Supervised vs. unsupervised vs. reinforcement learning",
+          "Data preprocessing, feature engineering, and train/test splits",
+          "Regression and classification algorithms (linear/logistic regression, decision trees, random forests, SVM, KNN)",
+          "Model evaluation metrics (accuracy, precision, recall, F1, ROC-AUC, RMSE)",
+          "Overfitting, underfitting, cross-validation, and regularization",
+          "Using scikit-learn to build and evaluate ML pipelines",
+          "A hands-on end-to-end ML project (data → model → evaluation)"
+        ]
+      },
+      {
+        title: "2(b) DL Basics",
+        topics: [
+          "Neural network fundamentals: neurons, layers, activation functions",
+          "Forward propagation, backpropagation, and gradient descent",
+          "Loss functions and optimizers (SGD, Adam, etc.)",
+          "Building neural networks with PyTorch/TensorFlow/Keras",
+          "Convolutional Neural Networks (CNNs) fundamentals",
+          "Recurrent Neural Networks (RNNs), LSTMs, and sequence modeling basics",
+          "Regularization techniques: dropout, batch normalization",
+          "Training, validating, and tuning a deep learning model"
+        ]
+      },
+      {
+        title: "2(c) NLP Basics",
+        topics: [
+          "Text preprocessing: tokenization, stemming, lemmatization, stop-word removal",
+          "Text representation: Bag-of-Words, TF-IDF, word embeddings (Word2Vec, GloVe)",
+          "Introduction to the Transformer architecture and attention mechanism",
+          "Using Hugging Face libraries for common NLP tasks (classification, NER, summarization)",
+          "Sequence-to-sequence models and their applications",
+          "Evaluation metrics for NLP tasks (BLEU, ROUGE, perplexity)",
+          "Building a simple NLP pipeline (e.g., sentiment analysis or text classifier)"
+        ]
+      },
+      {
+        title: "2(d) Computer Vision",
+        topics: [
+          "Image representation, preprocessing, and augmentation",
+          "CNN architectures (LeNet, ResNet, VGG) and transfer learning",
+          "Object detection and image segmentation fundamentals",
+          "Using OpenCV and PyTorch/TensorFlow for vision tasks",
+          "Introduction to multimodal models connecting vision and language",
+          "Practical project: image classification or object detection pipeline"
+        ]
+      },
+      {
+        title: "2(e) LLM Basics",
+        topics: [
+          "Evolution from RNNs to Transformers to modern LLMs",
+          "Tokenization, embeddings, and the attention mechanism explained",
+          "Pretraining vs. fine-tuning vs. instruction-tuning vs. RLHF",
+          "Understanding context windows, temperature, and sampling parameters",
+          "Using LLM APIs (OpenAI, Anthropic, open-source models) programmatically in Python",
+          "Basics of Retrieval-Augmented Generation (RAG) and embeddings-based search",
+          "Prompt-driven application development using Python SDKs"
+        ]
+      }
     ]
   },
   {
-    id: "deep-learning",
-    title: "Deep Learning & Neural Networks",
+    id: "applied-llm-engineering",
+    title: "Applied LLM Engineering — Agentic Systems & MLOps",
     category: "AI Courses",
-    description: "Build convolutional neural networks (CNNs) and recurrent networks (RNNs) using TensorFlow and PyTorch.",
+    description: "Moving from foundational knowledge to building, orchestrating, and operationalizing real LLM-powered applications using industry-standard frameworks and tools.",
     duration: "12 Weeks",
     level: "Advanced",
-    price: "₹44,999",
-    rating: 4.8,
-    reviews: 190,
-    featured: false,
-    timings: "Sat & Sun, 2:00 PM - 5:00 PM EST",
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=600&q=80",
+    price: "₹39,999",
+    rating: 4.9,
+    reviews: 180,
+    featured: true,
+    timings: "Mon & Wed, 8:00 PM - 10:00 PM IST",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
     mentor: {
-      name: "Dr. Elena Rostova",
-      role: "Neural Network Researcher",
-      company: "NVIDIA"
+      name: "Dr. Aris Thorne",
+      role: "Former Lead AI Scientist",
+      company: "Google DeepMind"
     },
     syllabus: [
-      "Artificial Neural Networks (ANN) & Backpropagation",
-      "Convolutional Networks (CNN) for Image Recognition",
-      "Sequence Models: RNN, LSTM, and GRUs",
-      "Generative Adversarial Networks (GANs) and Autoencoders",
-      "Optimization & Regularization (Dropout, Adam, Batch Norm)"
+      {
+        title: "3(a) MLOps Basics",
+        topics: [
+          "The ML/LLM lifecycle: data → training/fine-tuning → deployment → monitoring",
+          "Version control for data and models (DVC, model registries)",
+          "Experiment tracking (MLflow, Weights & Biases)",
+          "CI/CD concepts applied to ML/LLM pipelines",
+          "Model monitoring, drift detection, and retraining triggers",
+          "Reproducibility and environment management best practices"
+        ]
+      },
+      {
+        title: "3(b) LangChain and LangGraph",
+        topics: [
+          "Core LangChain concepts: chains, prompts, memory, tools, and agents",
+          "Building RAG pipelines with vector databases (e.g., FAISS, Chroma, Pinecone)",
+          "Introduction to LangGraph for building stateful, multi-step agent workflows",
+          "Designing agent graphs with nodes, edges, and conditional routing",
+          "Multi-agent orchestration and tool-calling patterns",
+          "Debugging and tracing LLM applications (LangSmith or equivalent)",
+          "Hands-on project: a RAG-based or multi-agent application"
+        ]
+      },
+      {
+        title: "3(c) N8N",
+        topics: [
+          "Introduction to n8n as an open-source workflow automation tool",
+          "Building automation workflows with triggers, nodes, and integrations",
+          "Connecting n8n to LLM APIs and vector databases",
+          "Automating data pipelines and notifications using n8n",
+          "Combining n8n with LangChain/LangGraph agents for hybrid automation",
+          "Deploying and self-hosting n8n workflows"
+        ]
+      },
+      {
+        title: "3(d) Project Development Using Local LLMs",
+        topics: [
+          "Overview of open-source/local LLMs (Llama, Mistral, etc.) and when to use them over hosted APIs",
+          "Running local LLMs using tools like Ollama or LM Studio",
+          "Quantization and hardware considerations for local inference",
+          "Building a privacy-preserving, offline-capable LLM application",
+          "Integrating local LLMs with LangChain/LangGraph pipelines",
+          "Capstone project: an end-to-end application powered entirely by a local LLM"
+        ]
+      }
     ]
   },
   {
-    id: "nlp-speech",
-    title: "Natural Language Processing (NLP)",
-    category: "AI Courses",
-    description: "Learn sentiment analysis, text summarization, speech-to-text, translation, and tokenizers using Hugging Face.",
-    duration: "8 Weeks",
-    level: "Advanced",
-    price: "₹29,999",
-    rating: 4.7,
-    reviews: 150,
-    featured: false,
-    timings: "Mon & Wed, 6:00 PM - 8:00 PM EST",
-    image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "David Vance",
-      role: "Staff NLP Engineer",
-      company: "Apple Siri Team"
-    },
-    syllabus: [
-      "Tokenization, Stemming, and Lemmatization",
-      "Word Embeddings: Word2Vec, GloVe, and FastText",
-      "Fine-tuning BERT and RoBERTa for Classification",
-      "Sequence-to-Sequence Models and Machine Translation",
-      "Speech-to-Text Pipelines & Whisper Integration"
-    ]
-  },
-  {
-    id: "computer-vision",
-    title: "Computer Vision",
-    category: "AI Courses",
-    description: "Build object detection systems, image segmentation models, and face recognition apps with OpenCV, YOLO, and PyTorch.",
-    duration: "10 Weeks",
-    level: "Advanced",
+    id: "python-production-deployment",
+    title: "Python Programming & Production Deployment",
+    category: "Development Courses",
+    description: "Core software engineering skills — programming fundamentals, data structures and algorithms, API development, containerization, and deployment — needed to turn an AI prototype into a production-ready application.",
+    duration: "16 Weeks",
+    level: "Intermediate",
     price: "₹34,999",
     rating: 4.8,
-    reviews: 180,
-    featured: false,
-    timings: "Tue & Thu, 7:00 PM - 9:00 PM EST",
-    image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Kenji Sato",
-      role: "Vision Architect",
-      company: "Tesla Autopilot Team"
-    },
-    syllabus: [
-      "Image Processing Fundamentals with OpenCV",
-      "Edge Detection, Contours, and Feature Matching",
-      "Object Detection with YOLOv8 & SSD",
-      "Semantic Segmentation with U-Net",
-      "Real-time Video Processing & Edge Deployment"
-    ]
-  },
-  /* {
-    id: "react-js",
-    title: "React JS Development",
-    category: "Development Courses",
-    description: "Master React 19, hooks, state management (Redux Toolkit/Zustand), styling with Tailwind CSS, and API integrations.",
-    duration: "8 Weeks",
-    level: "Intermediate",
-    price: "₹19,999",
-    rating: 4.8,
-    reviews: 680,
+    reviews: 420,
     featured: true,
-    timings: "Sat & Sun, 10:00 AM - 12:30 PM EST",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Alex Rivera",
-      role: "Senior UI Engineer",
-      company: "Vercel"
-    },
-    syllabus: [
-      "Modern JS ES6+ & React Elements",
-      "State Management: useState, useEffect, and Context API",
-      "Custom Hooks and Performance Optimization (memo, useMemo)",
-      "Routing with React Router DOM v6",
-      "State Management using Zustand and Redux Toolkit"
-    ]
-  }, */
-  {
-    id: "next-js",
-    title: "Next.js Production Framework",
-    category: "Development Courses",
-    description: "Build production-ready SEO-optimized React websites using Next.js App Router, SSR, SSG, ISR, and Server Actions.",
-    duration: "6 Weeks",
-    level: "Advanced",
-    price: "₹24,999",
-    rating: 4.9,
-    reviews: 310,
-    featured: false,
-    timings: "Mon & Wed, 8:00 PM - 10:00 PM EST",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+    timings: "Tue & Thu, 6:00 PM - 8:30 PM IST",
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80",
     mentor: {
       name: "Clara Dupont",
       role: "Framework Developer",
       company: "Vercel"
     },
     syllabus: [
-      "Next.js App Router & Server Components vs Client Components",
-      "Data Fetching, Caching, and Revalidation (ISR)",
-      "Dynamic Routing & Layouts",
-      "Server Actions & Form Handling",
-      "Next.js Optimization (Image, Font, Script) & Vercel Deployment"
-    ]
-  },
-  /* {
-    id: "mern-stack",
-    title: "MERN Full Stack Development",
-    category: "Development Courses",
-    description: "Create interactive SaaS applications using MongoDB, Express.js, React, Node.js, and secure JWT authentication.",
-    duration: "16 Weeks",
-    level: "Intermediate",
-    price: "₹49,999",
-    rating: 4.8,
-    reviews: 820,
-    featured: true,
-    timings: "Sat & Sun, 1:00 PM - 4:00 PM EST",
-    image: "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Vikram Malhotra",
-      role: "Full Stack Lead",
-      company: "Netflix"
-    },
-    syllabus: [
-      "Node.js Core & Express REST API Design",
-      "MongoDB Schema Modeling & Mongoose Queries",
-      "Secure JWT Authentication & Role-Based Access Control",
-      "Integrating React Frontend with Node Backend",
-      "Payment Gateway Integration (Stripe) and Cloud Deployment"
-    ]
-  }, */
-  {
-    id: "python-fullstack",
-    title: "Python Full Stack Development",
-    category: "Development Courses",
-    description: "Learn Python programming, database integration, and build web applications with Django, PostgreSQL, and React.",
-    duration: "16 Weeks",
-    level: "Beginner",
-    price: "₹44,999",
-    rating: 4.8,
-    reviews: 470,
-    featured: true,
-    timings: "Tue & Thu, 7:00 PM - 9:30 PM EST",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Rachel Green",
-      role: "Backend Architect",
-      company: "Spotify"
-    },
-    syllabus: [
-      "Python Core Syntax, OOP, and Scripting",
-      "Relational Database Design with PostgreSQL & SQL",
-      "Django Web Framework & REST API Development",
-      "Frontend Integration with Tailwind & JavaScript",
-      "Unit Testing, CI/CD, and Heroku/AWS Deployment"
-    ]
-  },
-  {
-    id: "java-fullstack",
-    title: "Java Full Stack Developer",
-    category: "Development Courses",
-    description: "Build robust enterprise applications using Java 17, Spring Boot, Microservices, Hibernate, and Angular/React.",
-    duration: "20 Weeks",
-    level: "Intermediate",
-    price: "₹54,999",
-    rating: 4.7,
-    reviews: 350,
-    featured: false,
-    timings: "Mon & Wed, 6:30 PM - 9:00 PM EST",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Sanjay Gupta",
-      role: "Enterprise Solutions Lead",
-      company: "Amazon Web Services"
-    },
-    syllabus: [
-      "Java OOPs, Streams, and Multithreading",
-      "Spring Boot Architecture, MVC & Data JPA",
-      "Microservices Communication (REST, Spring Cloud, Kafka)",
-      "Database Layer with Hibernate & PostgreSQL",
-      "Dockerizing Microservices & Deploying on AWS ECS"
-    ]
-  },
-  {
-    id: "python-prog",
-    title: "Python Programming",
-    category: "Development Courses",
-    description: "Learn Python from scratch. Covers variables, control structures, OOP, file handling, and basic scripting projects.",
-    duration: "6 Weeks",
-    level: "Beginner",
-    price: "₹9,999",
-    rating: 4.8,
-    reviews: 950,
-    featured: true,
-    timings: "Tue & Thu, 5:30 PM - 7:30 PM EST",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Nate Robinson",
-      role: "Automation Engineer",
-      company: "Google"
-    },
-    syllabus: [
-      "Python Installation & Syntax Essentials",
-      "Control Flow, Loops, and Custom Functions",
-      "Data Structures: Lists, Tuples, Dictionaries, Sets",
-      "Object-Oriented Programming (OOP) in Python",
-      "File Handling, Exception Catching, and API Consumption"
-    ]
-  },
-  /* {
-    id: "data-science",
-    title: "Data Science & Analytics",
-    category: "AI Courses",
-    description: "Master NumPy, Pandas, Matplotlib, SQL, and Tableau. Extract insights, build dashboards, and perform data stories.",
-    duration: "10 Weeks",
-    level: "Beginner",
-    price: "₹24,999",
-    rating: 4.7,
-    reviews: 580,
-    featured: true,
-    timings: "Sat & Sun, 9:00 AM - 11:30 AM EST",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Aisha Patel",
-      role: "Lead Analytics Consultant",
-      company: "Uber"
-    },
-    syllabus: [
-      "Data Manipulation with NumPy & Pandas",
-      "Data Visualization using Seaborn & Matplotlib",
-      "Advanced SQL Queries for Data Analysts",
-      "Statistical Hypothesis Testing & A/B Testing",
-      "Building Dashboards with Tableau & PowerBI"
-    ]
-  }, */
-  {
-    id: "aws-cloud",
-    title: "AWS Cloud Architect",
-    category: "Cloud & DevOps",
-    description: "Master AWS Core Services (EC2, S3, RDS, Lambda, IAM, VPC) and prepare for the AWS Solutions Architect Certification.",
-    duration: "8 Weeks",
-    level: "Intermediate",
-    price: "₹29,999",
-    rating: 4.8,
-    reviews: 290,
-    featured: false,
-    timings: "Mon & Wed, 7:00 PM - 9:00 PM EST",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "John Miller",
-      role: "Principal Cloud Engineer",
-      company: "Microsoft Azure"
-    },
-    syllabus: [
-      "AWS Global Infrastructure & IAM Permissions",
-      "Compute Services: EC2, Auto Scaling, Elastic Beanstalk",
-      "AWS Networking: VPC, Subnets, Route53, CloudFront",
-      "AWS Databases: RDS, DynamoDB, ElastiCache",
-      "Serverless Architecture: Lambda, API Gateway, S3 Hosting"
-    ]
-  },
-  {
-    id: "docker-containers",
-    title: "Docker & Containerization",
-    category: "Cloud & DevOps",
-    description: "Understand containers, images, volumes, network namespaces, multi-stage builds, and Docker Compose orchestration.",
-    duration: "4 Weeks",
-    level: "Beginner",
-    price: "₹9,999",
-    rating: 4.8,
-    reviews: 410,
-    featured: false,
-    timings: "Fri, 6:00 PM - 9:00 PM EST",
-    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Viktor Ivanov",
-      role: "DevOps Engineer",
-      company: "Kubernetes Foundation Contributor"
-    },
-    syllabus: [
-      "Virtualization vs Containerization Concept",
-      "Creating Dockerfiles & Custom Images",
-      "Managing Containers, Volumes, and Ports",
-      "Multi-container Networking with Docker Compose",
-      "Securing Images & Publishing to Docker Hub"
-    ]
-  },
-  {
-    id: "kubernetes-production",
-    title: "Kubernetes in Production",
-    category: "Cloud & DevOps",
-    description: "Learn Kubernetes architecture, Pods, Deployments, Services, Helm charts, Ingress, and cluster troubleshooting.",
-    duration: "8 Weeks",
-    level: "Advanced",
-    price: "₹34,999",
-    rating: 4.9,
-    reviews: 260,
-    featured: false,
-    timings: "Sat & Sun, 3:00 PM - 5:30 PM EST",
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Marcus Aurelius",
-      role: "Infrastructure Lead",
-      company: "Meta"
-    },
-    syllabus: [
-      "K8s Control Plane & Worker Node Components",
-      "Deployments, ReplicaSets, and Pod Lifecycle",
-      "Service Discovery, ClusterIP, NodePort, LoadBalancer",
-      "Configuring Ingress Controllers & SSL/TLS Certificates",
-      "Persistent Storage (PV/PVC) and Statefulness"
-    ]
-  },
-  {
-    id: "devops-engineer",
-    title: "DevOps Engineering Masterclass",
-    category: "Cloud & DevOps",
-    description: "Bridge the gap between development and operations. Learn CI/CD pipelines, GitOps, Terraform, and Ansible.",
-    duration: "12 Weeks",
-    level: "Intermediate",
-    price: "₹44,999",
-    rating: 4.9,
-    reviews: 580,
-    featured: true,
-    timings: "Tue & Thu, 7:00 PM - 9:30 PM EST",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80",
-    mentor: {
-      name: "Liam O'Connor",
-      role: "VP of Infrastructure",
-      company: "Cloudflare"
-    },
-    syllabus: [
-      "Version Control, Branching Models & Git workflows",
-      "Infrastructure as Code (IaC) with Terraform",
-      "Configuration Management using Ansible",
-      "CI/CD Pipeline Construction with GitHub Actions & Jenkins",
-      "Monitoring & Alerting with Prometheus and Grafana"
+      {
+        title: "4(a) Python Programming",
+        topics: [
+          "Python syntax, data types, control flow, and functions",
+          "Object-oriented programming in Python (classes, inheritance, polymorphism)",
+          "File handling, error handling, and exception management",
+          "Working with modules, packages, and virtual environments",
+          "List/dict comprehensions, generators, and decorators",
+          "Writing clean, Pythonic, and well-documented code"
+        ]
+      },
+      {
+        title: "4(b) Data Structures & Algorithms (DSA)",
+        topics: [
+          "Core data structures: arrays, linked lists, stacks, queues, trees, graphs, hash maps",
+          "Algorithmic techniques: recursion, sorting, searching, dynamic programming, greedy algorithms",
+          "Time and space complexity analysis (Big-O notation)",
+          "Problem-solving strategies for coding interviews and real-world efficiency",
+          "Practical implementation of DSA concepts in Python"
+        ]
+      },
+      {
+        title: "4(c) FastAPI",
+        topics: [
+          "Building REST APIs with FastAPI: routes, request/response models, path/query parameters",
+          "Data validation using Pydantic",
+          "Handling authentication, middleware, and error handling",
+          "Building async endpoints for high-performance applications",
+          "Exposing ML/LLM models as API endpoints",
+          "API documentation with Swagger/OpenAPI (auto-generated by FastAPI)",
+          "Testing APIs with pytest and Postman/cURL"
+        ]
+      },
+      {
+        title: "4(d) Docker",
+        topics: [
+          "Containerization concepts and why they matter for deployment",
+          "Writing Dockerfiles for Python/ML applications",
+          "Building, tagging, and running Docker images",
+          "Managing multi-container applications with Docker Compose",
+          "Environment variables, volumes, and networking in Docker",
+          "Best practices for lightweight, production-ready containers"
+        ]
+      },
+      {
+        title: "4(e) End-to-End Deployment of a Project",
+        topics: [
+          "Structuring a full-stack AI project for deployment (API + model + frontend/UI)",
+          "Deploying containerized applications to a cloud platform (AWS/Azure/GCP or a PaaS)",
+          "Setting up CI/CD pipelines for automated build, test, and deploy",
+          "Environment configuration, secrets management, and scaling considerations",
+          "Basic monitoring, logging, and error tracking in production",
+          "Capstone: deploy a working LLM-powered application end-to-end, from code to a live, accessible URL"
+        ]
+      }
     ]
   }
 ];

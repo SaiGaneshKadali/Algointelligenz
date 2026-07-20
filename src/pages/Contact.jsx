@@ -120,7 +120,7 @@ export default function Contact() {
                   Contact Coordinates
                 </h2>
                 <p className="text-sm text-slate-500 leading-relaxed font-normal">
-                  Drop by our Silicon Valley facilities, dial our advisors, or drop an email query. Our career counseling desk is open 7 days a week.
+                  Drop by our Bangalore campus, dial our advisors, or drop an email query. Our career counseling desk is open 7 days a week.
                 </p>
               </div>
 
@@ -134,8 +134,8 @@ export default function Contact() {
                   <div>
                     <h4 className="text-sm font-bold text-brand-primary">Office Address</h4>
                     <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                      100 Technology Parkway, Suite 500,<br />
-                      Silicon Valley, CA 94025
+                      41 1st main, BTM 1st stage,<br />
+                      Bangalore - 560029
                     </p>
                   </div>
                 </div>
@@ -147,8 +147,8 @@ export default function Contact() {
                   <div>
                     <h4 className="text-sm font-bold text-brand-primary">Advisors Desk</h4>
                     <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                      +1 (555) 234-5678 (Toll Free)<br />
-                      Mon-Sun: 9:00 AM - 8:00 PM EST
+                      +91 7899 917 141<br />
+                      Mon-Sun: 9:00 AM - 8:00 PM IST
                     </p>
                   </div>
                 </div>
@@ -160,8 +160,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-sm font-bold text-brand-primary">General Inquiries</h4>
                     <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                      info@aitechacademy.edu<br />
-                      placements@aitechacademy.edu
+                      Tazeem@algointelligenz.com
                     </p>
                   </div>
                 </div>
@@ -205,9 +204,9 @@ export default function Contact() {
 
             </div>
 
-            {/* Right: Validation Form */}
-            <div className="lg:col-span-7 bg-slate-50 border border-slate-100 rounded-3xl p-6 md:p-10 shadow-premium text-left relative overflow-hidden">
-              <AnimatePresence mode="wait">
+            {/* Right: Validation Form (Form Commented Out for Future Use) */}
+            <div className="lg:col-span-7 bg-slate-50 border border-slate-100 rounded-3xl p-6 md:p-10 shadow-premium text-left relative overflow-hidden flex flex-col justify-center min-h-[400px]">
+              {/* <AnimatePresence mode="wait">
                 {!formSubmitted ? (
                   <motion.form
                     key="contact-form"
@@ -319,7 +318,25 @@ export default function Contact() {
                     </button>
                   </motion.div>
                 )}
-              </AnimatePresence>
+              </AnimatePresence> */}
+
+              <div className="space-y-6 text-center max-w-md mx-auto py-8">
+                <div className="w-16 h-16 bg-blue-50 text-brand-secondary rounded-2xl flex items-center justify-center mx-auto border border-blue-100 shadow-sm text-2xl font-bold">
+                  💬
+                </div>
+                <h3 className="text-xl font-extrabold text-brand-primary tracking-tight">Connect with a Career Advisor</h3>
+                <p className="text-sm text-slate-500 leading-relaxed font-normal">
+                  We are here to guide your learning journey! Since we do not collect personal information through this website, please reach out to our admissions team directly via email or phone.
+                </p>
+                <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row justify-center gap-4 text-xs font-bold uppercase tracking-wider">
+                  <a href="tel:+917899917141" className="bg-brand-secondary hover:bg-brand-primary text-white py-3.5 px-6 rounded-lg transition-colors text-center shadow-secondary-shadow">
+                    Call Advisors
+                  </a>
+                  <a href="mailto:Tazeem@algointelligenz.com" className="bg-white border border-slate-200 hover:border-slate-300 text-brand-primary py-3.5 px-6 rounded-lg transition-colors text-center">
+                    Email Admissions
+                  </a>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -331,7 +348,7 @@ export default function Contact() {
         {/* Real iframe embed for premium corporate representation */}
         <iframe 
           title="Google Map Campus Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101235.15830911762!2d-122.1483329!3d37.4418834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7feb2d333d87007b!2sSilicon%20Valley%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.751347690623!2d77.6027668!3d12.9236979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14f9d9842bfb%3A0x6b30647e3355523b!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 
@@ -343,7 +360,7 @@ export default function Contact() {
         <div className="absolute top-4 left-4 bg-white border border-slate-100 rounded-lg p-3 shadow-premium z-10 hidden sm:block max-w-xs text-left">
           <p className="text-xs font-extrabold text-brand-primary">Algointelligenz Campus</p>
           <p className="text-[10px] text-slate-400 mt-1 leading-normal">
-            100 Technology Parkway, Silicon Valley, CA 94025.
+            41 1st main, BTM 1st stage, Bangalore - 560029.
           </p>
         </div>
       </section>
