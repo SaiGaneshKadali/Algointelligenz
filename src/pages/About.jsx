@@ -13,32 +13,32 @@ import SectionTitle from '../components/common/SectionTitle';
 export default function About() {
   const trainers = [
     {
-      name: "Dr. Aris Thorne",
+      name: "Dr. Aditya Kulkarni",
       role: "Lead AI Instructor",
       credentials: "Former Lead AI Scientist at Google DeepMind",
-      bio: "Aris has over 12 years of AI research experience. He holds a PhD in Computer Science and specializes in LLM alignment and agentic workflow designs.",
+      bio: "Aditya has over 12 years of AI research experience. He holds a PhD in Computer Science and specializes in LLM alignment and agentic workflow designs.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
     },
     {
-      name: "Alex Rivera",
-      role: "Lead Frontend Instructor",
+      name: "Rohan Verma",
+      role: "Lead Software Instructor",
       credentials: "Former Senior UI Engineer at Vercel",
-      bio: "Alex is a core contributor to several popular open-source React tooling utilities. He specializes in SSR, Next.js architecture, and UX optimization.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
+      bio: "Rohan is a core contributor to several popular open-source software utilities. He specializes in API design, Pythonic architecture, and system performance.",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
     },
     {
-      name: "Dr. Elena Rostova",
+      name: "Dr. Sneha Pillai",
       role: "Machine Learning Head",
       credentials: "Former Neural Network Researcher at NVIDIA",
-      bio: "Elena specializes in CUDA acceleration techniques, computer vision networks, and large-scale model training workflows.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80"
+      bio: "Sneha specializes in CUDA acceleration techniques, computer vision networks, and large-scale model training workflows.",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=300&q=80"
     },
     {
-      name: "Liam O'Connor",
-      role: "DevOps & Cloud Head",
+      name: "Vikramaditya Rao",
+      role: "Cloud & Infrastructure Head",
       credentials: "Former VP of Infrastructure at Cloudflare",
-      bio: "Liam has designed fault-tolerant cloud infrastructures for millions of active concurrent users. He is a Kubernetes and GitOps expert.",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80"
+      bio: "Vikramaditya has designed fault-tolerant cloud infrastructures for millions of active concurrent users. He is a Kubernetes and Docker deployment expert.",
+      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=300&q=80"
     }
   ];
 

@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
-  GraduationCap, 
-  TrendingUp, 
-  BookOpen, 
-  Building2, 
+import {
+  GraduationCap,
+  TrendingUp,
+  BookOpen,
+  Building2,
   ArrowRight,
   Sparkles
 } from 'lucide-react';
@@ -35,7 +35,7 @@ export default function Home() {
   const featuredCourses = COURSES.filter(course => course.featured).slice(0, 8);
 
   const stats = [
-    { value: 12000, suffix: "+", title: "Students Trained", icon: GraduationCap, description: "Professionals & college graduates" },
+    { value: 5000, suffix: "+", title: "Students Trained", icon: GraduationCap, description: "Professionals & college graduates" },
     { value: 95, suffix: "%", title: "Placement Rate", icon: TrendingUp, description: "Placed within 180 days of graduation" },
     { value: 17, suffix: "+", title: "Active Courses", icon: BookOpen, description: "AI, Full Stack & DevOps tracks" },
     { value: 50, suffix: "+", title: "Hiring Partners", icon: Building2, description: "Global tech & enterprise clients" }
@@ -43,14 +43,14 @@ export default function Home() {
 
   return (
     <div className="space-y-0">
-      
+
       {/* 1. Hero Banner Section */}
       <Hero />
 
       {/* 2. Featured Courses Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-8">
             <SectionTitle
               badge="Featured Programs"
@@ -114,7 +114,7 @@ export default function Home() {
       {/* 6. Testimonials Carousel Section */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <SectionTitle
             badge="Alumni Stories"
             title="What Our Graduates Are Saying"
@@ -189,8 +189,11 @@ export default function Home() {
             className="flex items-center text-slate-400"
           >
             {PARTNERS.map((partner, idx) => (
-              <SwiperSlide key={idx} className="flex justify-center items-center opacity-40 hover:opacity-85 hover:text-slate-700 transition-opacity duration-300">
-                <div className="flex items-center justify-center h-12 px-6">
+              <SwiperSlide key={idx} className="flex justify-center items-center p-2">
+                <div 
+                  className="flex items-center justify-center h-14 w-full px-4 border border-slate-100 hover:border-slate-200 rounded-xl shadow-sm hover:shadow-premium bg-white transition-all duration-300"
+                  title={partner.name}
+                >
                   {partner.svg}
                 </div>
               </SwiperSlide>
@@ -224,7 +227,7 @@ export default function Home() {
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </Link>
-            
+
             <Link to="/courses">
               <button className="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold px-8 py-3.5 rounded-lg text-sm transition-all shadow-lg">
                 Browse Curriculum

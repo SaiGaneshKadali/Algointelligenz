@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
-import { useToast } from '../../context/ToastContext';
-import { ArrowRight, Play, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Hero() {
-  const { addToast } = useToast();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -101,19 +99,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4"
             >
               <Link to="/courses" className="shrink-0">
-                <button className="w-full bg-brand-secondary hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-lg text-sm transition-all shadow-secondary-shadow hover:shadow-premium flex items-center justify-center gap-2 group">
+                <button className="w-full sm:w-auto bg-brand-secondary hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-lg text-sm transition-all shadow-secondary-shadow hover:shadow-premium flex items-center justify-center gap-2 group">
                   Explore Courses
                   <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
-              
-              <button
-                onClick={() => addToast("Please reach out directly at +91 7899 917 141 or Tazeem@algointelligenz.com to book your free career counseling demo session.", "info")}
-                className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold px-8 py-3.5 rounded-lg text-sm transition-all flex items-center justify-center gap-2 group shadow-lg"
-              >
-                <Play className="h-4 w-4 text-brand-accent fill-brand-accent group-hover:scale-110 transition-transform" />
-                Book Free Demo
-              </button>
             </motion.div>
 
           </motion.div>
@@ -145,12 +135,13 @@ export default function Hero() {
               <pre className="font-mono text-xs text-blue-400 leading-relaxed overflow-x-auto text-left">
                 <code>
                   <span className="text-slate-500">// Initialize AI Academy Model</span><br />
-                  <span className="text-purple-400">const</span> academy = <span className="text-purple-400">new</span> <span className="text-teal-300">AITechAcademy</span>();<br /><br />
+                  <span className="text-purple-400">const</span> academy = <span className="text-purple-400">new</span> <span className="text-teal-300">Algointelligenz</span>();<br /><br />
                   <span className="text-slate-500">// Fetch Live Syllabus Modules</span><br />
                   <span className="text-purple-400">await</span> academy.loadModules([<br />
-                  &nbsp;&nbsp;<span className="text-emerald-300">"GenerativeAI_LLMs"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-emerald-300">"React_FullStack"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-emerald-300">"Kubernetes_DevOps"</span><br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"LLM_and_Prompt_Engineering"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"Python_LLM_Foundations"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"Applied_LLM_Engineering"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"Python_Production_Deployment"</span><br />
                   ]);<br /><br />
                   <span className="text-slate-500">// Optimize Student Success</span><br />
                   <span className="text-purple-400">const</span> path = academy.getCareerPath(<span className="text-slate-200">"student"</span>);<br />

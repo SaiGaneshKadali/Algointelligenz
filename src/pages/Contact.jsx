@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useToast } from '../context/ToastContext';
+import { useCallModal } from '../context/CallModalContext';
 import { 
   Mail, 
   Phone, 
   MapPin, 
-  Clock, 
   HelpCircle, 
   Plus, 
   Minus, 
@@ -17,6 +17,7 @@ import SectionTitle from '../components/common/SectionTitle';
 
 export default function Contact() {
   const { addToast } = useToast();
+  const { openCallModal } = useCallModal();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -147,8 +148,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-sm font-bold text-brand-primary">Advisors Desk</h4>
                     <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                      +91 7899 917 141<br />
-                      Mon-Sun: 9:00 AM - 8:00 PM IST
+                      +91 7899 917 141
                     </p>
                   </div>
                 </div>
@@ -161,19 +161,6 @@ export default function Contact() {
                     <h4 className="text-sm font-bold text-brand-primary">General Inquiries</h4>
                     <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                       Tazeem@algointelligenz.com
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-50 text-brand-secondary p-3 rounded-xl shrink-0 border border-blue-100">
-                    <Clock className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-brand-primary">Working Hours</h4>
-                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                      Weekday Batches: Mon-Fri 6:00 PM - 10:00 PM<br />
-                      Weekend Batches: Sat-Sun 9:00 AM - 6:00 PM
                     </p>
                   </div>
                 </div>
@@ -329,9 +316,13 @@ export default function Contact() {
                   We are here to guide your learning journey! Since we do not collect personal information through this website, please reach out to our admissions team directly via email or phone.
                 </p>
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row justify-center gap-4 text-xs font-bold uppercase tracking-wider">
-                  <a href="tel:+917899917141" className="bg-brand-secondary hover:bg-brand-primary text-white py-3.5 px-6 rounded-lg transition-colors text-center shadow-secondary-shadow">
+                  <button
+                    type="button"
+                    onClick={openCallModal}
+                    className="bg-brand-secondary hover:bg-brand-primary text-white py-3.5 px-6 rounded-lg transition-colors text-center shadow-secondary-shadow"
+                  >
                     Call Advisors
-                  </a>
+                  </button>
                   <a href="mailto:Tazeem@algointelligenz.com" className="bg-white border border-slate-200 hover:border-slate-300 text-brand-primary py-3.5 px-6 rounded-lg transition-colors text-center">
                     Email Admissions
                   </a>
@@ -344,23 +335,26 @@ export default function Contact() {
       </section>
 
       {/* 3. Map Section */}
-      <section className="h-96 w-full bg-slate-200 border-t border-b border-slate-100 relative overflow-hidden">
-        {/* Real iframe embed for premium corporate representation */}
+      <section className="h-96 w-full bg-slate-100 border-t border-b border-slate-200 relative overflow-hidden">
+        {/* Real Google Maps embed pinned to address */}
         <iframe 
           title="Google Map Campus Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.751347690623!2d77.6027668!3d12.9236979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14f9d9842bfb%3A0x6b30647e3355523b!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          src="https://maps.google.com/maps?q=41+1st+main+BTM+1st+stage+Bangalore+560029&t=&z=16&ie=UTF8&iwloc=&output=embed"
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 
           allowFullScreen="" 
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"
-          className="absolute inset-0 w-full h-full grayscale opacity-80"
+          className="absolute inset-0 w-full h-full"
         />
-        <div className="absolute top-4 left-4 bg-white border border-slate-100 rounded-lg p-3 shadow-premium z-10 hidden sm:block max-w-xs text-left">
-          <p className="text-xs font-extrabold text-brand-primary">Algointelligenz Campus</p>
-          <p className="text-[10px] text-slate-400 mt-1 leading-normal">
-            41 1st main, BTM 1st stage, Bangalore - 560029.
+        <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md border border-slate-200 rounded-xl p-4 shadow-xl z-10 hidden sm:block max-w-xs text-left">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="h-2.5 w-2.5 rounded-full bg-rose-500 animate-ping shrink-0" />
+            <p className="text-xs font-extrabold text-brand-primary uppercase tracking-wider">Algointelligenz Campus</p>
+          </div>
+          <p className="text-xs text-slate-600 font-medium leading-relaxed">
+            41 1st main, BTM 1st stage, Bangalore - 560029
           </p>
         </div>
       </section>

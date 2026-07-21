@@ -1,3 +1,8 @@
+import llmPromptImg from '../assets/LLM and Prompt Engineering.png';
+import pythonLlmFoundationsImg from '../assets/Python for LLM development foundations.png';
+import appliedLlmImg from '../assets/Applied LLM.png';
+import pythonProgrammingImg from '../assets/Python Programming.png';
+
 export const COURSES = [
   {
     id: "llm-prompt-engineering",
@@ -11,9 +16,9 @@ export const COURSES = [
     reviews: 240,
     featured: true,
     timings: "Sat & Sun, 10:00 AM - 12:30 PM IST",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+    image: llmPromptImg,
     mentor: {
-      name: "Sarah Jenkins",
+      name: "Ananya Sharma",
       role: "Prompt Architect",
       company: "OpenAI Client Partner"
     },
@@ -83,9 +88,9 @@ export const COURSES = [
     reviews: 310,
     featured: true,
     timings: "Sat & Sun, 2:00 PM - 4:30 PM IST",
-    image: "https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=600&q=80",
+    image: pythonLlmFoundationsImg,
     mentor: {
-      name: "Marcus Aurelius",
+      name: "Rajesh Varma",
       role: "ML Platform Engineer",
       company: "Meta"
     },
@@ -164,9 +169,9 @@ export const COURSES = [
     reviews: 180,
     featured: true,
     timings: "Mon & Wed, 8:00 PM - 10:00 PM IST",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+    image: appliedLlmImg,
     mentor: {
-      name: "Dr. Aris Thorne",
+      name: "Dr. Aditya Kulkarni",
       role: "Former Lead AI Scientist",
       company: "Google DeepMind"
     },
@@ -230,9 +235,9 @@ export const COURSES = [
     reviews: 420,
     featured: true,
     timings: "Tue & Thu, 6:00 PM - 8:30 PM IST",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80",
+    image: pythonProgrammingImg,
     mentor: {
-      name: "Clara Dupont",
+      name: "Kavya Nair",
       role: "Framework Developer",
       company: "Vercel"
     },

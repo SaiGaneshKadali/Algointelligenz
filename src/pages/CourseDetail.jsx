@@ -146,13 +146,12 @@ export default function CourseDetail() {
               className="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-premium"
             >
               {/* Product Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-950 p-2 flex items-center justify-center">
                 <img 
                   src={course.image} 
                   alt={course.title} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain rounded-lg"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
 
               {/* Details & Pricing */}

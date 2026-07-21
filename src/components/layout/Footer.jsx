@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Cpu, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { useToast } from '../../context/ToastContext';
+import { useCallModal } from '../../context/CallModalContext';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const { addToast } = useToast();
+  const { openCallModal } = useCallModal();
 
   const handleSubscribe = (e) => {
     e.preventDefault();
@@ -113,11 +115,6 @@ export default function Footer() {
               <Mail className="h-4 w-4 text-brand-accent shrink-0" />
               <span>Tazeem@algointelligenz.com</span>
             </div>
-            <div className="pt-2 text-xs text-slate-500">
-              <p className="font-semibold text-slate-400">Business Hours:</p>
-              <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
-              <p>Sat - Sun: 10:00 AM - 4:00 PM</p>
-            </div>
           </div>
 
           {/* Column 4: Admissions Desk (Form Commented Out for Future Use) */}
@@ -129,9 +126,13 @@ export default function Footer() {
               Have any questions? Speak directly to our advisors to clear your doubts and enroll.
             </p>
             <div className="space-y-2">
-              <a href="tel:+917899917141" className="w-full flex items-center justify-center bg-brand-secondary hover:bg-brand-secondary/90 text-white rounded-lg py-2.5 text-sm font-semibold transition-colors duration-300 shadow-secondary-shadow">
+              <button
+                type="button"
+                onClick={openCallModal}
+                className="w-full flex items-center justify-center bg-brand-secondary hover:bg-brand-secondary/90 text-white rounded-lg py-2.5 text-sm font-semibold transition-colors duration-300 shadow-secondary-shadow"
+              >
                 Call Advisors
-              </a>
+              </button>
               <a href="mailto:Tazeem@algointelligenz.com" className="w-full flex items-center justify-center bg-slate-900 border border-slate-700 hover:border-slate-600 text-slate-300 rounded-lg py-2.5 text-sm font-semibold transition-colors duration-300">
                 Email Admissions
               </a>

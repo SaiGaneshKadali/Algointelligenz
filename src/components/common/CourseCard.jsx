@@ -18,24 +18,13 @@ export default function CourseCard({ course, showPrice = true }) {
         className="bg-white rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:border-slate-200 transition-all duration-300 flex flex-col h-full overflow-hidden group cursor-pointer"
       >
         {/* Course Image Wrapper */}
-        <div className="relative h-48 w-full overflow-hidden bg-slate-100">
+        <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-950 p-2 flex items-center justify-center">
           <img
             src={course.image}
             alt={course.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-contain rounded-lg group-hover:scale-102 transition-transform duration-300"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
-          
-          {/* Category Badge */}
-          <span className="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-wider bg-white/95 text-brand-primary px-2.5 py-1 rounded-md shadow-sm">
-            {course.category}
-          </span>
-
-          {/* Level Badge */}
-          <span className={`absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 border rounded-md shadow-sm ${levelColors[course.level]}`}>
-            {course.level}
-          </span>
         </div>
 
         {/* Card Content */}
