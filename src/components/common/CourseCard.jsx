@@ -60,12 +60,12 @@ export default function CourseCard({ course, showPrice = true }) {
 
           {/* CTA & Pricing */}
           <div className="flex items-center justify-between pt-2 border-t border-slate-50 mt-2">
-            {showPrice && (
+            {/* {showPrice && (
               <div>
                 <span className="text-xs text-slate-400 block font-medium">Course Fee</span>
                 <span className="text-lg font-extrabold text-brand-primary">{course.price}</span>
               </div>
-            )}
+            )} */}
             
             <span className="text-brand-secondary group-hover:translate-x-1.5 transition-transform duration-300 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider">
               Explore Syllabus

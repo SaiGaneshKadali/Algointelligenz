@@ -87,7 +87,7 @@ export default function Home() {
       {/* 4. Learning Journey Section */}
       <LearningJourney />
 
-      {/* 5. Student Success Metrics Section */}
+      {/* 5. Student Success Metrics Section
       <section className="py-20 bg-slate-50 relative border-t border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -110,6 +110,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* 6. Testimonials Carousel Section */}
       <section className="py-20 bg-white overflow-hidden">

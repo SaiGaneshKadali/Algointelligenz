@@ -156,13 +156,13 @@ export default function CourseDetail() {
 
               {/* Details & Pricing */}
               <div className="p-6 md:p-8 space-y-6">
-                <div>
+                {/* <div>
                   <span className="text-xs text-slate-400 font-medium block uppercase tracking-wider mb-1">Course Fee</span>
                   <div className="flex items-baseline gap-2">
                     <span className="text-3xl font-black text-brand-primary">{course.price}</span>
                     <span className="text-xs text-slate-400 font-semibold">(One-time program fee)</span>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Info List */}
                 <div className="space-y-4 border-t border-b border-slate-50 py-5 text-sm text-slate-600">
