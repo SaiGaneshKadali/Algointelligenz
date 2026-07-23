@@ -29,6 +29,7 @@ import CourseCard from '../components/common/CourseCard';
 import StatsCard from '../components/common/StatsCard';
 import TestimonialCard from '../components/common/TestimonialCard';
 import SectionTitle from '../components/common/SectionTitle';
+import WorkshopAdModal from '../components/common/WorkshopAdModal';
 
 export default function Home() {
   // Filter for featured courses (first 8 featured)
@@ -43,9 +44,60 @@ export default function Home() {
 
   return (
     <div className="space-y-0">
+      {/* Workshop Ad Popup */}
+      <WorkshopAdModal />
 
       {/* 1. Hero Banner Section */}
       <Hero />
+
+      {/* 1.5. Special Workshop Announcement (Advertisement) */}
+      <section className="py-12 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border-b border-slate-800 overflow-hidden relative">
+        {/* Decorative background glows */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(37,99,233,0.12),transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(20,184,166,0.06),transparent_40%)]" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="bg-slate-900/40 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 hover:border-slate-700 transition-all duration-300">
+            <div className="space-y-4 text-center lg:text-left max-w-3xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider">
+                <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+                Upcoming Workshop
+              </div>
+              
+              <h2 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+                AI Workshop on Aug 1st 2026 Saturday
+              </h2>
+              
+              <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+                Join our exclusive technology event hosted at <strong className="text-white">Indo sunrise group of institutions</strong>. Dive deep into cutting-edge industry practices, advanced frameworks, and build hands-on applications with mentors.
+              </p>
+              
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-xs text-slate-500">
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-accent" />
+                  Date: Aug 1st, 2026 (Saturday)
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-accent" />
+                  Host: Indo sunrise group of institutions
+                </span>
+              </div>
+            </div>
+            
+            <div className="shrink-0 w-full lg:w-auto">
+              <a 
+                href="https://indosunriseinternationalschool.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full lg:w-auto inline-flex items-center justify-center gap-2 bg-brand-secondary hover:bg-brand-secondary/95 text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all duration-300 shadow-secondary-shadow hover:-translate-y-0.5"
+              >
+                Visit Institution Website
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 2. Featured Courses Section */}
       <section className="py-20 bg-white">
