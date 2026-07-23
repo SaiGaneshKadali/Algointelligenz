@@ -25,7 +25,7 @@ export default function Footer() {
               <img 
                 src="/logo.png" 
                 alt="Algointelligenz Logo" 
-                className="h-10 w-auto object-contain rounded-lg"
+                className="h-14 w-auto object-contain rounded-lg"
               />
               <div>
                 <span className="font-extrabold text-lg tracking-tight text-white block leading-none">

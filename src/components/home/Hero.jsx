@@ -138,10 +138,10 @@ export default function Hero() {
                   <span className="text-purple-400">const</span> academy = <span className="text-purple-400">new</span> <span className="text-teal-300">Algointelligenz</span>();<br /><br />
                   <span className="text-slate-500">// Fetch Live Syllabus Modules</span><br />
                   <span className="text-purple-400">await</span> academy.loadModules([<br />
-                  &nbsp;&nbsp;<span className="text-emerald-300">"LLM_and_Prompt_Engineering"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-emerald-300">"Python_LLM_Foundations"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-emerald-300">"Applied_LLM_Engineering"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-emerald-300">"Python_Production_Deployment"</span><br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"Prompt_Engineering_and_LLM"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"Applied_AI_with_Python_Foundation"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"Agentic_AI_and_LLM_Engineering"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-emerald-300">"Python_Backend_Development_Deployment"</span><br />
                   ]);<br /><br />
                   <span className="text-slate-500">// Optimize Student Success</span><br />
                   <span className="text-purple-400">const</span> path = academy.getCareerPath(<span className="text-slate-200">"student"</span>);<br />

@@ -6,7 +6,7 @@ import pythonProgrammingImg from '../assets/Python Programming.png';
 export const COURSES = [
   {
     id: "llm-prompt-engineering",
-    title: "LLM and Prompt Engineering",
+    title: "Prompt Engineering and LLM",
     category: "AI Courses",
     description: "A practitioner-focused course on getting real work done with large language models — through prompting skill, Microsoft's LLM-in-Excel integration, no-code automation via Power Automate, and building agentic AI solutions with Copilot Studio.",
     duration: "8 Weeks",
@@ -78,7 +78,7 @@ export const COURSES = [
   },
   {
     id: "python-llm-foundations",
-    title: "Python for LLM Development — Foundations",
+    title: "Applied AI with Python - Foundation",
     category: "AI Courses",
     description: "A grounding in the technical building blocks behind modern AI systems — machine learning, deep learning, NLP, computer vision, and LLMs — using Python.",
     duration: "12 Weeks",
@@ -159,7 +159,7 @@ export const COURSES = [
   },
   {
     id: "applied-llm-engineering",
-    title: "Applied LLM Engineering — Agentic Systems & MLOps",
+    title: "Agentic AI & LLM Engineering: LangChain, LangGraph, MLOps & AI Agents",
     category: "AI Courses",
     description: "Moving from foundational knowledge to building, orchestrating, and operationalizing real LLM-powered applications using industry-standard frameworks and tools.",
     duration: "12 Weeks",
@@ -225,7 +225,7 @@ export const COURSES = [
   },
   {
     id: "python-production-deployment",
-    title: "Python Programming & Production Deployment",
+    title: "Python Backend Development & Deployment",
     category: "Development Courses",
     description: "Core software engineering skills — programming fundamentals, data structures and algorithms, API development, containerization, and deployment — needed to turn an AI prototype into a production-ready application.",
     duration: "16 Weeks",
